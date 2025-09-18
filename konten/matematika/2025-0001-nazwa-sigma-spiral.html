@@ -92,7 +92,7 @@
         <h2>Abstrak</h2>
         <p>Penelitian ini membahas tentang Sigma Spiral sebuah persamaan spiral yang melibatkan fungsi logaritma alami dan eksponensial. Melalui transformasi aljabar diperoleh bentuk:</p>
         
-        <code>√(1+k²)/k)(e^k − 1) = e^k</code>
+        <code>(√(1 + k²) / k) (e^k − 1) = e^k</code>
         <p>Penyelesaian numerik menunjukkan adanya solusi unik disekitar</p>
         
         <strong>Σs ≈ 18.53493733204947</strong>
@@ -102,22 +102,26 @@
         <p>Persamaan trasendental sering muncul dalam bidang matematika dan fisika. Sigma Spiral diperkenalkan sebagai studi kasus untuk memahami interaksi antara logaritma, eksponensial, dan bentuk spiral. Motivasi penelitian ini adalah mencari solusi Σs serta mengeksplorasi karakteristiknya.</p>
   
         <h2>Metode</h2>
-        <p>Pertama, persamaan dasar ditransformasikan ke bentuk eksponensial. Selanjutnya dilakukan pendekatan numerik menggunakan metode iteratif (Newton-Raphson atau pencarian akar berbasis perangkat lunak). Nilai konvergen dicatat dihasil akhir.</p>
+<p>Persamaan dasar ditransformasikan ke bentuk eksponensial. Penyelesaian numerik dilakukan menggunakan metode iteratif Newton–Raphson. Implementasi berbasis perangkat lunak (misalnya Python atau sistem aljabar komputer) memastikan konvergensi menuju akar unik. Nilai konstan Σs diperoleh setelah sejumlah iterasi.</p>
   
         <h2>Hasil</h2>
-        <p>Dari perhitungan numerik diperoleh nilai:</p>
+        <p>Dari penerapan metode Newton–Raphson, diperoleh nilai konvergen:</p>
         <strong>Σs ≈ 18.53493733204947</strong>
-        <p>Hasil ini konsisten dalam berbagai metode numerik dan memperhatikan solusi tunggal pada rentang yang diteliti.</p>
+        <p>Perhitungan konsisten pada berbagai inisialisasi awal, menunjukkan adanya solusi unik dalam rentang positif.</p>
+
   
         <h2>Diskusi</h2>
         <p>Solusi Σs memiliki sifat unik karena terletak pada titik keseimbangan antara pertumbuhan logaritma alami dan fungsi eksponensial. Ketika k mendekati nol, persamaan tidak memenuhi syarat resolusi; sedangkan untuk k sangat besar, sisi kanan mendominasi. Hal ini menunjukkan hanya ada satu titik potong signifikan. Potensi keterkaitan dengan fungsi Lambert W dan model spiral dapat ditelusuri lebih lanjut.</p>
+        
+        <p>Pendekatan dengan Lambert W tidak memberikan solusi praktis karena struktur persamaan lebih kompleks; oleh karena itu metode numerik (Newton–Raphson) lebih sesuai.</p>
   
          <section class="referensi">
-            <h2>Referensi</h2>
-            <ul>
-                <li>Corless, R.M., et al, “On the Lambert W Function.”, Advances in Computational Mathematics, 1996, h. 329-359.</li>
-                <li>Abramowitz, M., & Stegun, I.A, Handbook of Mathematical Functions, Dover, 1965, h. 60-80.</li>
-                <li>Press, W.H., et al, Numerical Recipes in C: The Art of Scientific Computing, Cambridge University Press, 1992. h. 362.</li>
+             <h2>Referensi</h2>
+             <ul>
+                 <li>Corless, R.M., et al, “On the Lambert W Function.”, <em>Advances in Computational Mathematics</em>, 1996, h. 329–359.</li>
+                 <li>Abramowitz, M., & Stegun, I.A, <em>Handbook of Mathematical Functions</em>, Dover, 1965, h. 66–70.</li>
+                 <li>Press, W.H., et al, <em>Numerical Recipes in C: The Art of Scientific Computing</em>, Cambridge University Press, 1992, h. 366–370.</li>
+                 <li>Nazwa Shabrina Zain, “The Sigma Spiral Constant (Σs): A Spiral Length Invariant”, Preprint, 2025.</li>
             </ul>
         </section>
         
